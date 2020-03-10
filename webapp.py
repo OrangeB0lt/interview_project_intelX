@@ -21,7 +21,7 @@ def main_page():
     '''
     serves main page
     '''
-    return render_template('example.html', cache_id=uuid.uuid4())
+    return render_template('index.html', cache_id=uuid.uuid4())
 
 @app.route('/api/project/all', methods=['GET'])
 def all_projects():
